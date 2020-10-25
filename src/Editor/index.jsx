@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import AceEditor from "react-ace";
 import { UndoManager } from "brace";
-import "brace/theme/idle_fingers";
+import "brace/theme/dracula";
 import "brace/ext/searchbox";
 
 import "./styles.css";
@@ -41,11 +41,11 @@ export default class Editor extends Component {
           width="100%"
           height="100%"
           mode="george"
-          theme="idle_fingers"
+          theme="dracula"
           value={this.props.value}
           onChange={this.props.onValueChange}
           setOptions={{
-            fontSize: 15,
+            fontSize: 24,
             highlightActiveLine: false,
             fixedWidthGutter: true,
             useSoftTabs: true,
